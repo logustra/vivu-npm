@@ -1,5 +1,5 @@
 ## vivu-npm
-[![Licence](https://img.shields.io/npm/l/@logustra/vountdown)](https://www.npmjs.com/package/@logustra/vountdown)
+[![License](https://img.shields.io/github/license/logustra/vivu-npm)](https://github.com/logustra/vivu-npm/blob/master/license.md)
 [![Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
 
@@ -13,6 +13,12 @@
 - Commit conventions: [commitizen](https://github.com/commitizen/cz-cli)
 - Linters: [commitlint](https://github.com/conventional-changelog/commitlint), [eslint](https://github.com/eslint/eslint), [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 - CI/CD: [github actions](https://github.com/features/actions)
+
+## Requirement
+  - [node.js](http://nodejs.org/)
+  - [volta](https://docs.volta.sh/guide/getting-started)
+  - [pnpm](https://pnpm.js.org/en/installation)
+  - [encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 
 ## Getting Started
 ### GitHub Template
@@ -47,6 +53,47 @@ When you use this template, try follow the checklist to update your info properl
 - [ ] Clean up the README(s) and remove modules
 
 And, enjoy :)
+
+## Publish to NPM
+Make sure you have added the `GIT_TOKEN` and `NPM_TOKEN` encrypted secrets
+
+```bash
+# tag git history
+$ git tag v0.0.1 -m 'v0.0.1'
+
+# push tag to git
+$ git push origin --tags
+```
+
+## Usage
+### Setup
+Vue 3
+```js
+import { createApp } from 'vue'
+import HelloWorld from '@logustra/vivu-npm'
+import App from './app.vue'
+
+const app = createApp(App)
+app.use(HelloWorld)
+```
+
+Vue 2
+```js
+import Vue from 'vue'
+import CompositionAPI from '@vue/composition-api'
+import HelloWorld from '@logustra/vivu-npm'
+
+Vue.use(CompositionAPI)
+Vue.use(HelloWorld)
+```
+
+### Basic Usage
+```html
+<template>
+  <hello-world />
+</template>
+```
+[Demo →](https://codesandbox.io/s/gallant-benji-olf2jh?file=/src/App.vue)
 
 ## Cheer me on
 If you like my works, you can cheer me on here 😆
