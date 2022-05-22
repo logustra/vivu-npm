@@ -1,6 +1,6 @@
 {
   "name": "@logustra/vivu-npm",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Starter template to build component library for vue.js 2-3",
   "keywords": [
     "starter",
