@@ -93,7 +93,7 @@ Vue.use(HelloWorld)
   <hello-world />
 </template>
 ```
-[Demo →](https://codesandbox.io/s/gallant-benji-olf2jh?file=/src/App.vue)
+[Demo →](https://stackblitz.com/edit/vitejs-vite-e7qhxx?file=src%2FApp.vue)
 
 ## Cheer me on
 If you like my works, you can cheer me on here 😆
