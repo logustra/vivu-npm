@@ -1,6 +1,6 @@
 {
   "name": "@logustra/vivu-npm",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Starter template to build component library for vue.js 2-3",
   "author": "Faizal Andyka",
   "license": "MIT",
@@ -25,7 +25,7 @@
     }
   },
   "main": "./dist/index.cjs.js",
-  "module": "./dist/index.esm.js",
+  "module": "./dist/index.es.js",
   "unpkg": "./dist/index.umd.js",
   "jsdelivr": "./dist/index.umd.js",
   "types": "./dist/types/index.d.ts",
